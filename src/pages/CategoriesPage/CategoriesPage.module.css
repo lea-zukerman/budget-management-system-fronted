@@ -1,0 +1,110 @@
+.container {
+  padding: 1.2rem 1.6rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.breadcrumbs {
+  margin: 0.6rem 0 1rem;
+  color: #005c97;
+  font-size: 0.9rem;
+}
+
+.breadcrumbs a {
+  color: #104b83;
+  text-decoration: none;
+}
+
+.formCard {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 0.8rem;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  border: 1px solid #cde0f7;
+  background: #f9fbff;
+  border-radius: 10px;
+}
+
+.formCard input {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid #95b6ea;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.formCard button {
+  border: none;
+  background: #3a7bbf;
+  color: #fff;
+  padding: 0.55rem 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.formCard .cancel {
+  background: #f05f5f;
+}
+
+.error {
+  color: #c12a2a;
+  margin-bottom: 0.6rem;
+}
+
+.success {
+  color: #1a7f1a;
+  margin-bottom: 0.6rem;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  border: 1px solid #d3e1ef;
+  overflow: hidden;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 0.72rem 0.8rem;
+  border-bottom: 1px solid #e8eff7;
+  background: #fff;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.actions {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.item button {
+  border: 1px solid #88aed5;
+  background: #eff5ff;
+  border-radius: 6px;
+  padding: 0.35rem 0.7rem;
+  cursor: pointer;
+}
+
+.item button:hover {
+  background: #d7e8ff;
+}
+
+@media (max-width: 680px) {
+  .item {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  .actions {
+    justify-content: flex-start;
+  }
+}

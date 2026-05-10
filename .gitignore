@@ -1,0 +1,13 @@
+# Dependency directories
+node_modules/
+
+# Build outputs
+bin/
+obj/
+dist/
+build/
+
+# IDE files
+.vs/
+.vscode/
+*.user
