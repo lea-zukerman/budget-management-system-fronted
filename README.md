@@ -1,37 +1,53 @@
-Smart Budget Management System (Backend)
-A robust RESTful API built with ASP.NET Core designed to help users manage their personal finances intelligently. The system automates expense tracking, invoice management, and budget limits.
+# SmartBudget - Frontend
 
- Key Features
-User Authentication & Security: Secure login and registration using JWT (JSON Web Tokens) with role-based access control (Admin/User).
+A modern, high-performance financial management dashboard. This application allows users to track expenses, manage budgets, process invoices, and visualize financial trends through an intuitive and responsive interface.
 
-Automated Expense Tracking: Track daily expenses and categorize them automatically based on vendor rules.
+## Key Features
 
-Smart Monthly Budgeting: Set financial goals and limits for different categories and monitor progress in real-time.
+* **Interactive Dashboard**: Real-time visualization of yearly trends and monthly spending.
+* **Budget vs. Actuals**: Visual progress bars with color-coded alerts (green/red) for budget tracking.
+* **Invoice Processing**: Dedicated module for uploading and analyzing financial documents.
+* **Complete Management**: Comprehensive CRUD for Suppliers, Categories, and Expenses.
+* **Email & Notifications**: Built-in settings for automated alerts and system notifications.
+* **Secure Auth**: State-managed authentication flow using Redux Toolkit.
 
-Invoice Management: Upload, store, and process digital invoices, linking them directly to budget transactions.
+## 🛠️ Technology Stack
 
-Notification System: Real-time alerts for budget overruns and important account updates.
+* **Framework**: React 19 (Functional Components & Hooks)
+* **Language**: TypeScript for type-safe development.
+* **State Management**: Redux Toolkit (Slices & Thunks)
+* **Data Visualization**: Recharts (Line, Bar, and Pie charts)
+* **Build Tool**: Vite
+* **Routing**: React Router Dom v7
+* **Styling**: CSS Modules (Scoped styling per component)
+* **API Client**: Axios
 
-Admin Dashboard: Dedicated endpoints for managing default categories and global system settings.
+## Getting Started
 
- Tech Stack
-Framework: .NET Core Web API
+To run this project locally, follow these steps:
 
-Security: JWT Bearer Authentication, Identity Policy Management
+1.  **Install Dependencies**:
+    ```bash
+    npm install
+    ```
 
-Architecture: Clean Architecture with Repository Pattern and Services Layer
+2.  **Start Development Server**:
+    ```bash
+    npm run dev
+    ```
 
-Features: File Upload Handling, Async/Await operations, DTO mapping
+3.  **Build for Production**:
+    ```bash
+    npm run build
+    ```
 
- API Overview
-auth/ - Handle registration and secure login.
+## Project Structure
 
-expenses/ - Manage user transactions and category assignments.
+* `src/components`: Reusable UI elements like Navbar and LoadingSpinners.
+* `src/pages`: Main view components (Dashboard, Expenses, Budget, etc.).
+* `src/redux`: Global state logic and authentication slices.
+* `src/services`: API service layers for Backend communication.
+* `src/routes`: Route definitions and protected path logic.
 
-invoices/ - Upload and process invoice files.
-
-monthlybudgets/ - Set and track monthly financial limits.
-
-notifications/ - Manage user alerts and read statuses.
-
-admin/ - Administrative controls for system defaults.
+---
+**Developed by Lea Zukerman**
