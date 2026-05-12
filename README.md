@@ -1,7 +1,7 @@
 Smart Budget Management System (Backend)
 A robust RESTful API built with ASP.NET Core designed to help users manage their personal finances intelligently. The system automates expense tracking, invoice management, and budget limits.
 
-🚀 Key Features
+ Key Features
 User Authentication & Security: Secure login and registration using JWT (JSON Web Tokens) with role-based access control (Admin/User).
 
 Automated Expense Tracking: Track daily expenses and categorize them automatically based on vendor rules.
@@ -14,7 +14,7 @@ Notification System: Real-time alerts for budget overruns and important account 
 
 Admin Dashboard: Dedicated endpoints for managing default categories and global system settings.
 
-🛠 Tech Stack
+ Tech Stack
 Framework: .NET Core Web API
 
 Security: JWT Bearer Authentication, Identity Policy Management
@@ -23,7 +23,7 @@ Architecture: Clean Architecture with Repository Pattern and Services Layer
 
 Features: File Upload Handling, Async/Await operations, DTO mapping
 
-🔌 API Overview
+ API Overview
 auth/ - Handle registration and secure login.
 
 expenses/ - Manage user transactions and category assignments.
